@@ -1,29 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello World</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="A minimalist portfolio showcasing my work and skills">
+    <meta name="author" content="Your Name">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    
+    <link href="custom.css" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-
 <body>
-  <h1>Pontus Edvard Samani's Hypertext Site</h1>
-  <ul>
-    <li><a href="https://obsidian.samani.se" target="_blank">Obsidian</a></li>
-    <li><a href="https://substack.samani.se" target="_blank">Substack</a></li>
-  </ul>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exercism">Exercism Solutions</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJNVLKQX43"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-HJNVLKQX43');
-  </script>
+    
+    <main>
+        
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title mb-4">About</h2>
+                        <div class="section-content">
+                            <h1>About Me</h1>
+
+<p>Welcome to my portfolio! I&rsquo;m a passionate developer with a love for creating clean, efficient, and user-friendly applications.</p>
+
+<h2>Skills</h2>
+
+<ul>
+<li><strong>Frontend Development</strong>: React, Vue.js, HTML5, CSS3, JavaScript (ES6+)</li>
+<li><strong>Backend Development</strong>: Node.js, Python, Go, RESTful APIs</li>
+<li><strong>Database</strong>: PostgreSQL, MongoDB, Redis</li>
+<li><strong>DevOps</strong>: Docker, AWS, CI/CD pipelines</li>
+<li><strong>Tools</strong>: Git, VS Code, Figma</li>
+</ul>
+
+<h2>Experience</h2>
+
+<p>I have over 5 years of experience in full-stack development, working with both startups and established companies. I enjoy solving complex problems and turning ideas into reality through code.</p>
+
+<h2>Philosophy</h2>
+
+<p>I believe in writing clean, maintainable code and creating products that provide real value to users. I&rsquo;m always eager to learn new technologies and improve my skills.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title mb-4">Projects</h2>
+                        <div class="section-content">
+                            <h1>Featured Projects</h1>
+
+<p>Here are some of the projects I&rsquo;m proud to have worked on:</p>
+
+<h2>E-Commerce Platform</h2>
+
+<p>A full-stack e-commerce solution built with React and Node.js. Features include:</p>
+
+<ul>
+<li>User authentication and authorization</li>
+<li>Product catalog with search and filtering</li>
+<li>Shopping cart and checkout process</li>
+<li>Admin dashboard for inventory management</li>
+<li>Payment integration with Stripe</li>
+</ul>
+
+<p><strong>Technologies</strong>: React, Node.js, PostgreSQL, Stripe API</p>
+
+<h2>Task Management App</h2>
+
+<p>A collaborative task management application designed for teams. Key features:</p>
+
+<ul>
+<li>Real-time collaboration</li>
+<li>Project organization and task tracking</li>
+<li>Team member management</li>
+<li>Progress visualization with charts</li>
+<li>Mobile-responsive design</li>
+</ul>
+
+<p><strong>Technologies</strong>: Vue.js, Socket.io, MongoDB, Chart.js</p>
+
+<h2>Weather Dashboard</h2>
+
+<p>A clean, minimalist weather dashboard that displays current conditions and forecasts. Features:</p>
+
+<ul>
+<li>Location-based weather data</li>
+<li>Interactive maps</li>
+<li>Weather alerts and notifications</li>
+<li>Dark/light theme toggle</li>
+<li>Offline functionality</li>
+</ul>
+
+<p><strong>Technologies</strong>: JavaScript, OpenWeatherMap API, Leaflet.js, Service Workers</p>
+
+<h2>Open Source Contributions</h2>
+
+<p>I actively contribute to open source projects and maintain several libraries:</p>
+
+<ul>
+<li><strong>react-form-builder</strong>: A drag-and-drop form builder component</li>
+<li><strong>vue-chart-wizard</strong>: Chart generation library for Vue.js</li>
+<li><strong>go-static-generator</strong>: This static site generator!</li>
+</ul>
+
+<p>You can find more of my work on <a href="https://github.com/yourusername">GitHub</a>.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="exercism" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title mb-4">Exercism Solutions</h2>
+                        <div class="section-content">
+                            <h1>Exercism Solutions</h1>
+
+<p>My solutions to coding exercises from <a href="https://exercism.org/">Exercism</a>, focusing on Go programming language. These solutions demonstrate my approach to problem-solving and clean code practices.</p>
+
+<h2>Go Track Solutions</h2>
+
+<p>Here are my solutions to various Exercism exercises in Go:</p>
+
+<h3>Core Concepts</h3>
+
+<ul>
+<li><strong>Hello World</strong> - Basic Go program structure</li>
+<li><strong>Two Fer</strong> - String formatting and conditionals</li>
+<li><strong>Leap</strong> - Date calculations and logic</li>
+<li><strong>Raindrops</strong> - String manipulation and loops</li>
+<li><strong>Scrabble Score</strong> - Map usage and character processing</li>
+</ul>
+
+<h3>Data Structures</h3>
+
+<ul>
+<li><strong>Accumulate</strong> - Slice operations and functional programming</li>
+<li><strong>Allergies</strong> - Bit manipulation and sets</li>
+<li><strong>Anagram</strong> - String comparison and sorting</li>
+<li><strong>Atbash Cipher</strong> - Character mapping and encryption</li>
+<li><strong>Binary Search</strong> - Algorithm implementation</li>
+</ul>
+
+<h3>Advanced Topics</h3>
+
+<ul>
+<li><strong>Clock</strong> - Custom types and methods</li>
+<li><strong>Custom Set</strong> - Data structure implementation</li>
+<li><strong>ETL</strong> - Data transformation patterns</li>
+<li><strong>Grade School</strong> - Complex data organization</li>
+<li><strong>High Scores</strong> - Sorting and filtering</li>
+</ul>
+
+<h2>Solution Highlights</h2>
+
+<h3>Clean Code Principles</h3>
+
+<p>All solutions follow Go best practices:</p>
+
+<ul>
+<li><strong>Clear naming</strong>: Descriptive variable and function names</li>
+<li><strong>Proper error handling</strong>: Explicit error checking and handling</li>
+<li><strong>Documentation</strong>: Comprehensive comments and docstrings</li>
+<li><strong>Testing</strong>: Unit tests for all functions</li>
+<li><strong>Performance</strong>: Efficient algorithms and data structures</li>
+</ul>
+
+<h3>Code Examples</h3>
+
+<p>Here are some representative solutions:</p>
+
+<h4>Two Fer (String Formatting)</h4>
+
+<pre><code class="language-go">package twofer
+
+import &quot;fmt&quot;
+
+// ShareWith returns a string with the given name or &quot;you&quot;
+func ShareWith(name string) string {
+    if name == &quot;&quot; {
+        name = &quot;you&quot;
+    }
+    return fmt.Sprintf(&quot;One for %s, one for me.&quot;, name)
+}
+</code></pre>
+
+<h4>Leap Year (Date Logic)</h4>
+
+<pre><code class="language-go">package leap
+
+// IsLeapYear determines if a year is a leap year
+func IsLeapYear(year int) bool {
+    return year%4 == 0 &amp;&amp; (year%100 != 0 || year%400 == 0)
+}
+</code></pre>
+
+<h4>Scrabble Score (Map Usage)</h4>
+
+<pre><code class="language-go">package scrabble
+
+import &quot;strings&quot;
+
+var letterValues = map[rune]int{
+    'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1, 'N': 1, 'R': 1, 'S': 1, 'T': 1,
+    'D': 2, 'G': 2,
+    'B': 3, 'C': 3, 'M': 3, 'P': 3,
+    'F': 4, 'H': 4, 'V': 4, 'W': 4, 'Y': 4,
+    'K': 5,
+    'J': 8, 'X': 8,
+    'Q': 10, 'Z': 10,
+}
+
+// Score calculates the Scrabble score for a word
+func Score(word string) int {
+    score := 0
+    for _, letter := range strings.ToUpper(word) {
+        score += letterValues[letter]
+    }
+    return score
+}
+</code></pre>
+
+<h2>Learning Journey</h2>
+
+<h3>Progress Tracking</h3>
+
+<ul>
+<li><strong>Completed Exercises</strong>: 25+ solutions</li>
+<li><strong>Languages</strong>: Primarily Go, with some Python and JavaScript</li>
+<li><strong>Focus Areas</strong>: Algorithms, data structures, and Go idioms</li>
+<li><strong>Code Quality</strong>: Emphasis on readability and maintainability</li>
+</ul>
+
+<h3>Key Learnings</h3>
+
+<ol>
+<li><strong>Go Idioms</strong>: Proper use of slices, maps, and interfaces</li>
+<li><strong>Error Handling</strong>: Explicit error checking patterns</li>
+<li><strong>Testing</strong>: Writing comprehensive unit tests</li>
+<li><strong>Performance</strong>: Understanding Go&rsquo;s performance characteristics</li>
+<li><strong>Documentation</strong>: Clear, concise code documentation</li>
+</ol>
+
+<h2>Repository</h2>
+
+<p>All solutions are available in my <a href="https://github.com/artailicous/artailicous.github.io/tree/main/solutions/go">GitHub repository</a> with:</p>
+
+<ul>
+<li>Complete source code</li>
+<li>Unit tests</li>
+<li>README files with problem descriptions</li>
+<li>Solution explanations and approaches</li>
+</ul>
+
+<h2>Exercism Profile</h2>
+
+<p>You can view my complete Exercism profile and track progress at: <a href="https://exercism.org/profiles/artailicous">exercism.org/profiles/artailicous</a></p>
+
+<hr>
+
+<p><em>These solutions represent my ongoing journey in mastering Go programming through practical exercises and problem-solving.</em></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title mb-4">Contact</h2>
+                        <div class="section-content">
+                            <h1>Get In Touch</h1>
+
+<p>I&rsquo;m always interested in hearing about new opportunities and exciting projects. Let&rsquo;s connect!</p>
+
+<h2>Contact Information</h2>
+
+<ul>
+<li><strong>Email</strong>: your.email@example.com</li>
+<li><strong>Phone</strong>: +1 (555) 123-4567</li>
+<li><strong>Location</strong>: Your City, Country</li>
+</ul>
+
+<h2>Social Media</h2>
+
+<ul>
+<li><a href="https://github.com/yourusername">GitHub</a> - Check out my code and contributions</li>
+<li><a href="https://linkedin.com/in/yourusername">LinkedIn</a> - Professional networking</li>
+<li><a href="https://twitter.com/yourusername">Twitter</a> - Tech thoughts and updates</li>
+</ul>
+
+<h2>Let&rsquo;s Work Together</h2>
+
+<p>Whether you have a project in mind, want to collaborate, or just want to chat about technology, I&rsquo;d love to hear from you. I&rsquo;m particularly interested in:</p>
+
+<ul>
+<li>Full-stack development opportunities</li>
+<li>Open source collaborations</li>
+<li>Technical consulting projects</li>
+<li>Speaking engagements</li>
+</ul>
+
+<p>Feel free to reach out through any of the channels above, and I&rsquo;ll get back to you as soon as possible!</p>
+
+<hr>
+
+<p><em>This site was built using the Go Static Site Generator with Bootstrap and a minimalist design philosophy.</em></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; Your Name 2025</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    
+                    <a href="mailto:your.email@example.com" class="text-muted me-3" target="_blank" rel="noopener">Email</a>
+                    
+                    <a href="https://github.com/yourusername" class="text-muted me-3" target="_blank" rel="noopener">GitHub</a>
+                    
+                    <a href="https://linkedin.com/in/yourusername" class="text-muted me-3" target="_blank" rel="noopener">LinkedIn</a>
+                    
+                    <a href="https://twitter.com/yourusername" class="text-muted me-3" target="_blank" rel="noopener">Twitter</a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
